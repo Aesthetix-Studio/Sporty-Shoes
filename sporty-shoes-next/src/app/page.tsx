@@ -1,6 +1,8 @@
 import { createServerSupabaseClient } from '@/lib/supabase-server'
 import ProductCard from '@/components/ProductCard'
 
+export const dynamic = 'force-dynamic'
+
 const CATEGORIES = ['All', 'Running', 'Casual', 'Training']
 
 export default async function HomePage({
