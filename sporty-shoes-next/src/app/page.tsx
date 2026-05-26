@@ -16,7 +16,11 @@ export default async function HomePage({
   let query = supabase.from('products').select('*').order('created_at', { ascending: false })
   if (category && category !== 'All') query = query.eq('category', category)
 
-  const { data: products } = await query
+  const { data: products, error } = await query
+
+  if (error) {
+    console.error('Supabase error:', error)
+  }
 
   return (
     <div>
