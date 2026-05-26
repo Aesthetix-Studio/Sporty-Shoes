@@ -1,7 +1,7 @@
 import { createServerSupabaseClient } from '@/lib/supabase-server'
 import ProductCard from '@/components/ProductCard'
 
-export const dynamic = 'force-dynamic'
+export const revalidate = 60
 
 const CATEGORIES = ['All', 'Running', 'Casual', 'Training']
 

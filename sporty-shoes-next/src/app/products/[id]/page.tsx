@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import AddToCartButton from '@/components/AddToCartButton'
 
-export const dynamic = 'force-dynamic'
+export const revalidate = 60
 
 export default async function ProductPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params
