@@ -67,12 +67,12 @@ create policy "order_items_insert" on order_items
 -- Seed data (sample products)
 -- ============================================================
 insert into products (name, brand, category, price, image_url, description, stock) values
-  ('Air Max 270',      'Nike',    'Running',   129.99, 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600', 'Lightweight running shoe with Max Air unit.', 50),
-  ('Ultra Boost 22',  'Adidas',  'Running',   179.99, 'https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=600', 'Responsive Boost midsole for all-day comfort.', 40),
-  ('Chuck Taylor All Star', 'Converse', 'Casual', 59.99, 'https://images.unsplash.com/photo-1463100099107-aa0980c362e6?w=600', 'Classic canvas high-top sneaker.', 80),
-  ('Old Skool',        'Vans',    'Casual',    69.99, 'https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=600', 'Iconic side-stripe skate shoe.', 60),
-  ('Gel-Kayano 30',   'Asics',   'Running',   159.99, 'https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=600', 'Premium stability running shoe.', 35),
-  ('Suede Classic',   'Puma',    'Casual',    79.99, 'https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=600', 'Timeless suede sneaker.', 45),
-  ('React Infinity',  'Nike',    'Training',  149.99, 'https://images.unsplash.com/photo-1539185441755-769473a23570?w=600', 'Designed to help reduce injury.', 30),
-  ('Forum Low',       'Adidas',  'Casual',    89.99, 'https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?w=600', 'Basketball-inspired street style.', 55)
+  ('Air Max 270',      'Nike',    'Running',   129.99, 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&auto=format&fit=crop', 'Lightweight running shoe with Max Air unit.', 50),
+  ('Ultra Boost 22',  'Adidas',  'Running',   179.99, 'https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=600&auto=format&fit=crop', 'Responsive Boost midsole for all-day comfort.', 40),
+  ('Chuck Taylor All Star', 'Converse', 'Casual', 59.99, 'https://images.unsplash.com/photo-1463100099107-aa0980c362e6?w=600&auto=format&fit=crop', 'Classic canvas high-top sneaker.', 80),
+  ('Old Skool',        'Vans',    'Casual',    69.99, 'https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=600&auto=format&fit=crop', 'Iconic side-stripe skate shoe.', 60),
+  ('Gel-Kayano 30',   'Asics',   'Running',   159.99, 'https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=600&auto=format&fit=crop', 'Premium stability running shoe.', 35),
+  ('Suede Classic',   'Puma',    'Casual',    79.99, 'https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=600&auto=format&fit=crop', 'Timeless suede sneaker.', 45),
+  ('React Infinity',  'Nike',    'Training',  149.99, 'https://images.unsplash.com/photo-1539185441755-769473a23570?w=600&auto=format&fit=crop', 'Designed to help reduce injury.', 30),
+  ('Forum Low',       'Adidas',  'Casual',    89.99, 'https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?w=600&auto=format&fit=crop', 'Basketball-inspired street style.', 55)
 on conflict do nothing;

@@ -18,7 +18,7 @@ export default async function ProductPage({ params }: { params: Promise<{ id: st
       <Link href="/" className="text-sm text-brand-500 hover:underline mb-6 inline-block">← Back to shop</Link>
       <div className="grid md:grid-cols-2 gap-10">
         <div className="relative aspect-square rounded-2xl overflow-hidden bg-gray-100">
-          <Image src={product.image_url} alt={product.name} fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
+          <Image src={product.image_url || 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&auto=format&fit=crop'} alt={product.name} fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
         </div>
         <div className="flex flex-col justify-center">
           <p className="text-sm text-brand-500 font-semibold uppercase tracking-wide">{product.brand}</p>

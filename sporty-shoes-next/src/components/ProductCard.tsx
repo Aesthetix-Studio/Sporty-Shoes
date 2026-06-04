@@ -5,17 +5,20 @@ import Link from 'next/link'
 import { useCart } from '@/context/CartContext'
 import type { Product } from '@/types/database'
 
+const FALLBACK = 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&auto=format&fit=crop'
+
 export default function ProductCard({ product }: { product: Product }) {
   const { add } = useCart()
   return (
     <div className="card group flex flex-col">
       <Link href={`/products/${product.id}`} className="relative aspect-square overflow-hidden bg-gray-100">
         <Image
-          src={product.image_url}
+          src={product.image_url || FALLBACK}
           alt={product.name}
           fill
           className="object-cover group-hover:scale-105 transition-transform duration-300"
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+          onError={(e) => { (e.target as HTMLImageElement).src = FALLBACK }}
         />
       </Link>
       <div className="p-4 flex flex-col flex-1">
