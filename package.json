@@ -1,0 +1,13 @@
+{
+  "name": "sporty-shoes",
+  "private": true,
+  "scripts": {
+    "postinstall": "npm --prefix sporty-shoes-next install",
+    "dev": "npm --prefix sporty-shoes-next run dev",
+    "build": "npm --prefix sporty-shoes-next run build",
+    "start": "npm --prefix sporty-shoes-next run start"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  }
+}

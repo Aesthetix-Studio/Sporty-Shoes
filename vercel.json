@@ -1,0 +1,6 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "sporty-shoes-next/.next",
+  "installCommand": "npm install",
+  "framework": "nextjs"
+}
