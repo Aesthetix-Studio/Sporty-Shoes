@@ -1,6 +1,6 @@
 {
-  "buildCommand": "npm --prefix sporty-shoes-next run build",
+  "buildCommand": "cd sporty-shoes-next && npm run build",
   "outputDirectory": "sporty-shoes-next/.next",
-  "installCommand": "npm --prefix sporty-shoes-next install",
+  "installCommand": "cd sporty-shoes-next && npm install",
   "framework": "nextjs"
 }
